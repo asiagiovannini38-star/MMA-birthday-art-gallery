@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MMA Royal Gallery</title>
+
+<style>
+body{
+margin:0;
+font-family:Georgia,serif;
+background:#08142b;
+color:white;
+text-align:center;
+}
+
+h1{
+color:#ffd86a;
+font-size:3em;
+padding-top:40px;
+text-shadow:0 0 20px gold;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+padding:40px;
+}
+
+.card{
+background:#14274f;
+border:4px solid gold;
+border-radius:20px;
+padding:20px;
+box-shadow:0 0 20px rgba(255,215,0,.4);
+}
+
+.card img{
+width:100%;
+border-radius:15px;
+}
+
+.card h2{
+color:#ffd86a;
+margin:15px 0 5px;
+}
+
+.card p{
+color:#ddd;
+}
+
+.back{
+display:inline-block;
+margin:40px;
+padding:15px 35px;
+background:gold;
+color:#222;
+font-weight:bold;
+text-decoration:none;
+border-radius:50px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>👑 Royal Art Gallery 👑</h1>
+
+<div class="gallery">
+
+<div class="card">
+<img src="https://placehold.co/600x800/png?text=Artwork+1">
+<h2>Artwork #1</h2>
+<p>Artist Name</p>
+</div>
+
+<div class="card">
+<img src="https://placehold.co/600x800/png?text=Artwork+2">
+<h2>Artwork #2</h2>
+<p>Artist Name</p>
+</div>
+
+<div class="card">
+<img src="https://placehold.co/600x800/png?text=Artwork+3">
+<h2>Artwork #3</h2>
+<p>Artist Name</p>
+</div>
+
+</div>
+
+<a class="back" href="index.html">⬅ Return to Castle</a>
+
+</body>
+</html>
