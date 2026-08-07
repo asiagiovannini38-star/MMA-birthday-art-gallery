@@ -8,13 +8,11 @@ body{
   color:#fff;
   font-family:Georgia,"Times New Roman",serif;
   background:
-    radial-gradient(circle at 50% 10%,rgba(124,72,190,.35),transparent 35%),
-    linear-gradient(180deg,#080b21 0%,#101a3c 48%,#070b1d 100%);
-}
+    background:#050505;
 body:before{
   content:"";
   position:fixed;inset:0;pointer-events:none;opacity:.22;
-  background-image:radial-gradient(#fff 1px,transparent 1px),radial-gradient(#f6d56a 1px,transparent 1px);
+  background-image:radial-gradient(rgba(212,166,42,.45) 1px,transparent 1px);
   background-size:70px 70px,130px 130px;
   animation:stars 45s linear infinite;
 }
