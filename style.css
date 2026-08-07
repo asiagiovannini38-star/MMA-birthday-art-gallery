@@ -91,3 +91,104 @@ footer a{color:#f6d56a;text-decoration:none}
   .art-card{border-width:2px}.art-info{padding:10px}.art-name{font-size:1rem}
   .viewer-prev{left:8px}.viewer-next{right:8px}
 }
+/* 👑 MMA ROYAL ANNIVERSARY POLISH 👑 */
+
+body {
+  background:
+    radial-gradient(circle at top, rgba(255,215,100,.18), transparent 35%),
+    linear-gradient(180deg, #06102e 0%, #101d45 45%, #050b20 100%);
+}
+
+.gallery-header {
+  padding: 45px 20px 30px;
+  text-align: center;
+}
+
+.gallery-header h1 {
+  font-size: clamp(2rem, 8vw, 4rem);
+  color: #ffd86a;
+  text-shadow:
+    0 0 8px rgba(255,215,100,.8),
+    0 0 25px rgba(255,215,100,.45);
+  letter-spacing: 1px;
+}
+
+.gallery-header p {
+  color: #fff3c4;
+  font-size: 1rem;
+}
+
+.gallery-intro {
+  text-align: center;
+  margin: 25px auto 35px;
+}
+
+.gallery-intro h2 {
+  color: #f6d56a;
+  text-shadow: 0 0 15px rgba(246,213,106,.4);
+}
+
+.art-card {
+  background: linear-gradient(145deg, #182653, #080f2b);
+  border: 2px solid #e8c65a;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow:
+    0 8px 25px rgba(0,0,0,.45),
+    0 0 18px rgba(255,215,100,.18);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.art-card:hover {
+  transform: translateY(-7px) scale(1.015);
+  box-shadow:
+    0 15px 35px rgba(0,0,0,.55),
+    0 0 30px rgba(255,215,100,.35);
+}
+
+.art-image-wrap {
+  background: #050505;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.art-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.art-info {
+  background: linear-gradient(180deg, #182653, #0c1535);
+  padding: 16px 12px 20px;
+  text-align: center;
+}
+
+.art-number {
+  color: #b9b9d0;
+  letter-spacing: 2px;
+  font-size: .75rem;
+}
+
+.art-name {
+  color: #ffd86a;
+  font-size: 1.35rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(255,215,100,.3);
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    gap: 16px;
+    padding: 15px;
+  }
+
+  .art-card {
+    border-radius: 20px;
+  }
+
+  .art-name {
+    font-size: 1.1rem;
+  }
+}
