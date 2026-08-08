@@ -15,7 +15,8 @@ const artworks = [
   ["IMG_7030.png","Boog"],
   ["IMG_7032.png","Tiberos"],
   ["IMG_7062.png","Erste"],
-  ["IMG_7063.png","Tidows"]
+  ["IMG_7063.png","Tidows"],
+  ["IMG_7136.png","Redhood"]
 ];
 
 const gallery=document.getElementById("gallery");
@@ -53,18 +54,26 @@ function openViewer(i){
   viewer.classList.add("open");
   viewer.setAttribute("aria-hidden","false");
 }
+
 function closeViewer(){
   viewer.classList.remove("open");
   viewer.setAttribute("aria-hidden","true");
   viewerImage.src="";
 }
-function moveViewer(step){openViewer(current+step)}
+
+function moveViewer(step){
+  openViewer(current+step);
+}
 
 if(viewer){
   document.querySelector(".viewer-close").addEventListener("click",closeViewer);
   document.querySelector(".viewer-prev").addEventListener("click",()=>moveViewer(-1));
   document.querySelector(".viewer-next").addEventListener("click",()=>moveViewer(1));
-  viewer.addEventListener("click",e=>{if(e.target===viewer)closeViewer()});
+
+  viewer.addEventListener("click",e=>{
+    if(e.target===viewer)closeViewer();
+  });
+
   document.addEventListener("keydown",e=>{
     if(!viewer.classList.contains("open"))return;
     if(e.key==="Escape")closeViewer();
@@ -72,4 +81,3 @@ if(viewer){
     if(e.key==="ArrowRight")moveViewer(1);
   });
 }
-
