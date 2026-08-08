@@ -3,46 +3,220 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>MMA Royal Gallery</title>
+
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
 <div class="sparkles" aria-hidden="true"></div>
 
+
+<!-- 👑 GALLERY HEADER -->
+
 <header class="gallery-header">
-  <a class="back-link" href="index.html">← Castle</a>
-  <div class="eyebrow">QUEEN BONITA PRESENTS</div>
-  <h1>👑 Royal Anniversary Gallery</h1>
-  <p>17 masterpieces • 17 heroes • One Mad Monkey Army</p>
+
+  <a class="back-link" href="index.html">
+    ← Castle
+  </a>
+
+  <div class="eyebrow">
+    QUEEN BONITA PRESENTS
+  </div>
+
+  <h1>
+    👑 Royal Anniversary Gallery
+  </h1>
+
+  <p>
+    17 masterpieces • 17 heroes • One Mad Monkey Army
+  </p>
+
 </header>
 
+
 <main>
+
+
+  <!-- 🖼️ EXHIBITION -->
+
   <section class="gallery-intro">
-    <h2>The Exhibition Hall</h2>
-    <p>Tap any masterpiece to view it in full size.</p>
+
+    <h2>
+      The Exhibition Hall
+    </h2>
+
+    <p>
+      Take your time.
+      Admire every masterpiece.
+      Open them in full size.
+    </p>
+
+    <p>
+      <strong>
+        Your royal decision comes after the exhibition.
+      </strong>
+    </p>
+
   </section>
 
-  <section id="gallery" class="gallery" aria-label="Anniversary artwork">
+
+  <section
+    id="gallery"
+    class="gallery"
+    aria-label="Anniversary artwork">
   </section>
+
+
+  <!-- 🗳️ ROYAL VOTING HALL -->
+
+  <section class="story-panel royal-vote">
+
+    <h2>
+      🗳️ The Royal Voting Hall
+    </h2>
+
+    <p>
+      <strong>
+        You have seen the masterpieces.
+      </strong>
+    </p>
+
+    <p>
+      You have walked through the exhibition,
+      discovered the memories and met the
+      heroes of the Mad Monkey Army.
+    </p>
+
+    <p>
+      Now the kingdom asks for your judgment.
+    </p>
+
+    <p>
+      👑 <strong>17 masterpieces.</strong>
+      <br>
+      🐵 <strong>17 heroes.</strong>
+      <br>
+      🏆 <strong>One Royal Vote.</strong>
+    </p>
+
+    <p>
+      Choose the artwork that stole your heart,
+      made you laugh, impressed you the most,
+      or simply deserves your royal approval.
+    </p>
+
+    <p>
+      ⚠️ <strong>ONE VOTE PER MMA MEMBER.</strong>
+    </p>
+
+    <p>
+      Please vote fairly and choose only one
+      masterpiece.
+    </p>
+
+    <a
+      class="royal-button"
+      href="https://forms.gle/X2fuBAbdG3wzJeTP8"
+      target="_blank"
+      rel="noopener noreferrer">
+      👑 Cast Your Royal Vote
+    </a>
+
+  </section>
+
+
+  <!-- 👑 FINAL MESSAGE -->
+
+  <section class="story-panel">
+
+    <h2>
+      ❤️ Thank You, MMA
+    </h2>
+
+    <p>
+      Whatever masterpiece you choose,
+      every artwork represents a member
+      of the family that made this first year special.
+    </p>
+
+    <p>
+      <strong>
+        One Army • One Family • One Victory
+      </strong>
+    </p>
+
+    <p>
+      Happy 1st Anniversary, Mad Monkey Army. 🐵👑
+    </p>
+
+  </section>
+
+
 </main>
 
-<div id="viewer" class="viewer" aria-hidden="true">
-  <button class="viewer-close" aria-label="Close">×</button>
-  <button class="viewer-prev" aria-label="Previous">‹</button>
-  <div class="viewer-content">
-    <img id="viewer-image" src="" alt="">
-    <h2 id="viewer-name"></h2>
-    <p id="viewer-number"></p>
-  </div>
-  <button class="viewer-next" aria-label="Next">›</button>
-</div>
+
+<!-- 👑 FOOTER -->
 
 <footer>
-  <a href="index.html">🏰 Return to the Kingdom</a>
+
+  <a href="index.html">
+    🏰 Return to the Kingdom
+  </a>
+
   <span> • </span>
-  <span>Long live MMA 🐵👑</span>
+
+  <span>
+    Long live MMA 🐵👑
+  </span>
+
 </footer>
 
+
+<!-- 🔍 IMAGE VIEWER -->
+
+<div
+  id="viewer"
+  class="viewer"
+  aria-hidden="true">
+
+  <button
+    class="viewer-close"
+    aria-label="Close">
+    ×
+  </button>
+
+  <button
+    class="viewer-prev"
+    aria-label="Previous">
+    ‹
+  </button>
+
+  <div class="viewer-content">
+
+    <img
+      id="viewer-image"
+      src=""
+      alt="">
+
+    <h2 id="viewer-name"></h2>
+
+    <p id="viewer-number"></p>
+
+  </div>
+
+  <button
+    class="viewer-next"
+    aria-label="Next">
+    ›
+  </button>
+
+</div>
+
+
 <script src="script.js"></script>
+
 </body>
 </html>
