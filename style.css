@@ -680,3 +680,163 @@ footer a {
     right: 8px;
   }
 }
+/* =========================================
+   👑 ROYAL EXHIBITION DETAILS 👑
+   ========================================= */
+
+.art-card {
+  position: relative;
+}
+
+/* Elegant golden corner ornaments */
+.art-card::before,
+.art-card::after {
+  content: "✦";
+  position: absolute;
+  z-index: 5;
+
+  color: #f6d56a;
+  font-size: 18px;
+
+  text-shadow:
+    0 0 8px rgba(246, 213, 106, 0.8),
+    0 0 16px rgba(246, 213, 106, 0.35);
+
+  pointer-events: none;
+
+  opacity: 0.85;
+}
+
+.art-card::before {
+  top: 7px;
+  left: 9px;
+}
+
+.art-card::after {
+  top: 7px;
+  right: 9px;
+}
+
+/* Luxurious frame around the artwork */
+.art-image-wrap {
+  position: relative;
+
+  box-shadow:
+    inset 0 0 25px rgba(0, 0, 0, 0.45);
+}
+
+/* Soft golden museum lighting */
+.art-image-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(255, 225, 120, 0.10),
+      transparent 45%
+    );
+
+  opacity: 0.8;
+}
+
+/* Make the artwork feel slightly more precious */
+.art-card img {
+  transition:
+    transform 0.5s ease,
+    filter 0.5s ease;
+}
+
+.art-card:hover img {
+  transform: scale(1.025);
+
+  filter:
+    brightness(1.04)
+    saturate(1.05);
+}
+
+/* More elegant information plaque */
+.art-info {
+  position: relative;
+
+  border-top:
+    1px solid rgba(246, 213, 106, 0.35);
+}
+
+/* Small royal divider above the artwork name */
+.art-name::before {
+  content: "✦  ";
+  color: #f6d56a;
+}
+
+.art-name::after {
+  content: "  ✦";
+  color: #f6d56a;
+}
+
+/* Stronger museum-card hover */
+.art-card:hover {
+  border-color: #fff0a5;
+
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.75),
+    0 0 20px rgba(246, 213, 106, 0.25),
+    0 0 45px rgba(246, 213, 106, 0.12);
+}
+
+/* =========================================
+   ROYAL GALLERY DIVIDERS
+   ========================================= */
+
+.gallery-intro h2::before,
+.gallery-intro h2::after {
+  content: " ✦ ";
+  color: #f6d56a;
+  opacity: 0.8;
+}
+
+/* Elegant little line underneath the gallery title */
+.gallery-intro {
+  position: relative;
+}
+
+.gallery-intro::after {
+  content: "";
+
+  display: block;
+
+  width: 90px;
+  height: 1px;
+
+  margin: 22px auto 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      #f6d56a,
+      transparent
+    );
+
+  box-shadow:
+    0 0 8px rgba(246, 213, 106, 0.5);
+}
+
+/* =========================================
+   MOBILE TOUCH EFFECT
+   ========================================= */
+
+@media (max-width: 600px) {
+
+  .art-card:active {
+    transform: scale(0.98);
+  }
+
+  .art-card::before,
+  .art-card::after {
+    font-size: 15px;
+  }
+}
